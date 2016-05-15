@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite">
+	<test verbose="2" name="RegressionSuite1">
+		<classes>
+			<class
+				name="org.gurukul.tests.gurukultests.CreateANewBranchByLoggingInAsAdmin" />
+			<class
+				name="org.gurukul.tests.gurukultests.CreateANewStaffByLoggingInAsAdmin" />
+			<class name="org.gurukul.tests.gurukultests.EditBranchDetails" />
+			<class name="org.gurukul.tests.gurukultests.EditStaffDetails" />
+			<class name="org.gurukul.tests.gurukultests.QueryAndDeleteABranch" />
+			<class name="org.gurukul.tests.gurukultests.QueryAndDeleteAStaff" />
+			<class name="org.gurukul.tests.gurukultests.Registration" />
+			<class name="org.gurukul.tests.gurukultests.ViewBranchDetails" />
+			<class name="org.gurukul.tests.gurukultests.ViewStaffDetails" />
+
+		</classes>
+	</test>
+</suite> 
