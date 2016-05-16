@@ -129,6 +129,7 @@ public class EditStaffDetails extends BaseTest {
 
 		// Step 6
 		logger.info("Step 6: Click on View button of Staff");
+		waitForSeconds(3);
 		staffLib.clickOnViewButtonOfStaff(staffName_Edit, branchName2);
 
 		// validation points

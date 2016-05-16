@@ -33,7 +33,7 @@ public class BaseTest {
 		return uid.substring(uid.length() - 1 - 5, uid.length() - 1);
 	}
 
-	@BeforeTest
+	@BeforeMethod
 	/**
 	 * This method will configure webdriver with baseURL and maximize the
 	 * browser
@@ -48,13 +48,14 @@ public class BaseTest {
 	/**
 	 * This method will close the driver object
 	 */
-	@AfterTest
+	@AfterMethod
 	public final void tearDown() {
-		driver = SeleniumWDFactory.getDriver();
-		driver.manage().deleteAllCookies();
-		driver.close();
-		driver.quit();
-		driver = null;
+		if (driver != null) {
+			driver.manage().deleteAllCookies();
+			driver.close();
+			driver = SeleniumWDFactory.startDriver();
+			
+		}
 	}
 
 	/**
