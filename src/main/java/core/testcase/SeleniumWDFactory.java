@@ -68,7 +68,6 @@ public class SeleniumWDFactory {
 	 * @return
 	 */
 	public static WebDriver restartDriver() {
-		driver.manage().deleteAllCookies();
 		driver.close();
 		driver.quit();
 		driver = null;
